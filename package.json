@@ -1,16 +1,35 @@
 {
   "name": "codex-bridge-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenAI Codex CLI bridge for Claude Code via MCP",
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
     "dev": "ts-node src/index.ts"
   },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "bin": {
-    "codex-bridge-mcp": "./build/index.js"
+    "codex-bridge-mcp": "build/index.js"
   },
-  "keywords": ["mcp", "codex", "claude-code", "openai"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "keywords": [
+    "mcp",
+    "codex",
+    "claude-code",
+    "openai"
+  ],
   "author": "Your Name",
   "license": "MIT"
 }

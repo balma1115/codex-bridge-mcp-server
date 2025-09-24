@@ -26,6 +26,9 @@ Thumbs.db
 dist/
 build/
 out/
+*.js.map
+*.d.ts
+!tsconfig.json
 
 # Testing
 coverage/

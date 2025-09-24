@@ -1,0 +1,40 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Config files
+tsconfig.json
+.gitignore
+.npmignore
+
+# Development files
+*.log
+.claude/
+.vscode/
+.idea/
+
+# Git files
+.git/
+.github/
+
+# Test files
+*.test.js
+*.spec.js
+coverage/
+__tests__/
+
+# Documentation source
+docs/
+
+# Environment files
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python virtual env
+venv/
+naver-keyword-extractor/
